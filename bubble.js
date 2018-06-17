@@ -1,5 +1,5 @@
-var rn = require('random-number');
 
+var fs = require('fs')
 //排序算法实现
 const config = {
     debug: true
@@ -19,10 +19,12 @@ function debugTime(str, type) {
 
 //冒泡排序
 // var arr = //[3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 46, 4, 19, 50, 48];
-var count = 1000;
-var arr = [];
-var op = { min: 0, max: count * 10, integer: true };
-while (count > 0) { arr.push(rn(op)); count--; }
+var dataStr = fs.readFileSync('data/data_w.json');
+var arr0 = JSON.parse(dataStr).data;
+var arr = JSON.parse(dataStr).data;
+var arr2 = JSON.parse(dataStr).data;
+var arr3 = JSON.parse(dataStr).data;
+
 // console.log(arr.toString());
 function bubbleSort(arr) {
     if (config.debug) debugTime('bubble', 1);
@@ -104,14 +106,18 @@ function bubbleSort3(arr) {
 }
 
 var res;
-// res = bubbleSort0(arr);
+bubbleSort0(arr0);//16.190425999462605ms
+bubbleSort(arr);//8.961947001516819ms
+bubbleSort2(arr2);//8.522971004247665ms
+bubbleSort3(arr3);//9.308738999068737ms
+// res = bubbleSort0(arr);//首次启动运行：24.384653002023697ms，第二次运行：5.7681500017642975ms
 // console.log(1, res.toString());
 
-// res = bubbleSort(arr);
+// res = bubbleSort(arr);//78.68115899711847ms  56.05484999716282ms
 // console.log(1, res.toString());
 
-// res = bubbleSort2(arr);
+// res = bubbleSort2(arr);//22.335119999945164ms,  0.07852800190448761ms
 // console.log(2, res.toString());
 
-// res = bubbleSort3(arr);
+// res = bubbleSort3(arr);//26.442476995289326ms  3.8210460022091866ms
 // console.log(3, res.toString());
