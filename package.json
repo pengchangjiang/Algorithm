@@ -1,0 +1,26 @@
+{
+  "name": "algorithm",
+  "version": "1.0.0",
+  "description": "算法测试",
+  "main": "sorting.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pengchangjiang/Algorithm.git"
+  },
+  "keywords": [
+    "算法",
+    "排序"
+  ],
+  "author": "pcj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pengchangjiang/Algorithm/issues"
+  },
+  "homepage": "https://github.com/pengchangjiang/Algorithm#readme",
+  "dependencies": {
+    "random-number": "0.0.9"
+  }
+}
