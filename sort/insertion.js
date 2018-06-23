@@ -1,5 +1,5 @@
 
-const config = require('./config.js');
+const config = require('../config.js');
 
 var dataStr = config.dataStr;
 var arr = JSON.parse(dataStr).data;
