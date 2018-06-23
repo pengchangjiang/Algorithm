@@ -1,7 +1,7 @@
 const fs = require('fs')
 module.exports = {
     debug: true,
-    dataStr: fs.readFileSync('data/data_w.json'),
+    dataStr: fs.readFileSync('data/data_1w.json'),
     debugTime: function (str, type) {
         switch (type) {
             case 1:

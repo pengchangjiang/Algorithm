@@ -19,7 +19,7 @@ function debugTime(str, type) {
 
 //冒泡排序
 // var arr = //[3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 46, 4, 19, 50, 48];
-var dataStr = fs.readFileSync('data/data_w.json');
+var dataStr = fs.readFileSync('data/data_1w.json');
 var arr0 = JSON.parse(dataStr).data;
 var arr = JSON.parse(dataStr).data;
 var arr2 = JSON.parse(dataStr).data;
